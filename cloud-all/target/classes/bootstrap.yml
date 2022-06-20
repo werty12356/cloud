@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: cloud-all
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848 #nacos服务地址
+        namespace: 62762524-6b57-424d-806c-30f35388b488   #指定namespace 默认为public，一般我们使用分组是为了区分不同的环境如dev、test、beta。。。
+        register-enabled: true
+      config:
+        file-extension: yml
+        namespace: 62762524-6b57-424d-806c-30f35388b488
+        server-addr: 127.0.0.1:8848
+    sentinel:
+      transport:
+        dashboard: localhost:8080
+        port: 8719 #默认8719，假如被占用了会自动从8719开始依次+1扫描。直至找到未被占用的端口

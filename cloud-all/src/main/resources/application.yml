@@ -1,0 +1,4 @@
+server:
+  port: 8081
+knife4j:
+  production: false

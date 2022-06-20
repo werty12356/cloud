@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloud-common" />
+        <module name="cloud-getway" />
+        <module name="cloud-client" />
+        <module name="untitled-client" />
+        <module name="cloud-all" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ace-security" target="1.8" />
+      <module name="cloud-all" target="1.8" />
+      <module name="cloud-client" target="1.8" />
+      <module name="cloud-common" target="1.8" />
+      <module name="cloud-getway" target="1.8" />
+      <module name="cloud-palt" target="1.8" />
+      <module name="untitled-client" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ace-security" options="-parameters" />
+      <module name="cloud-all" options="-parameters" />
+      <module name="cloud-client" options="-parameters" />
+      <module name="cloud-common" options="-parameters" />
+      <module name="cloud-getway" options="-parameters" />
+      <module name="cloud-palt" options="" />
+      <module name="untitled-client" options="" />
+    </option>
+  </component>
+</project>
